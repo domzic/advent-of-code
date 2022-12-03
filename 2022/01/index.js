@@ -1,13 +1,14 @@
-const fs = require('fs');
+const getInput = require('../data');
 
-const input = fs.readFileSync('input.txt').toString().trim();
+(async function() {
+    const input = await getInput('01');
+    const sum = array => array.reduce((acc, current) => acc + parseInt(current), 0);
 
-const sum = array => array.reduce((acc, current) => acc + parseInt(current), 0);
+    const totals = input
+        .split('\n\n')
+        .map(elf => sum(elf.split('\n')))
+        .sort((a, b) => b - a);
 
-const totals = input
-    .split('\n\n')
-    .map(elf => sum(elf.split('\n')))
-    .sort((a, b) => b - a);
-
-console.log('Totals: ', totals[0]);
-console.log('Top 3: ', sum(totals.slice(0, 3)));
+    console.log('Totals: ', totals[0]);
+    console.log('Top 3: ', sum(totals.slice(0, 3)))
+})();
