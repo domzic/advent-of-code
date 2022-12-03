@@ -25,10 +25,8 @@ const DRAW_SCORE = 3;
 
 const WIN_SCORE = 6;
 
-(async function () {
-    const input = await getInput('02');
+export default function (input: string) {
     const games = input.split('\n');
-
     const total = games.reduce<number>((accumulated, current) => {
         const [opponent, , you] = [...current];
         let additionalScore = 0;
@@ -42,4 +40,4 @@ const WIN_SCORE = 6;
     }, 0);
 
     console.log('Total: ', total);
-})();
+}

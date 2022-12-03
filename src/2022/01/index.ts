@@ -1,11 +1,6 @@
-import getInput from '../data';
-
-function sum(array: number[]): number {
-    return array.reduce((acc, current) => acc + current, 0);
-}
-
-(async function () {
-    const input = await getInput('01');
+export default async function (input: string) {
+    const sum = (array: number[]): number =>
+        array.reduce((acc, current) => acc + current, 0);
 
     const totals = input
         .split('\n\n')
@@ -14,4 +9,4 @@ function sum(array: number[]): number {
 
     console.log('Totals: ', totals[0]);
     console.log('Top 3: ', sum(totals.slice(0, 3)));
-})();
+}

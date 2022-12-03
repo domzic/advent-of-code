@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "exec": "ts-node src/runner"
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,8 @@
     "eslint-plugin-promise": "^6.0.0",
     "prettier": "^2.8.0",
     "typescript": "*"
+  },
+  "dependencies": {
+    "commander": "^9.4.1"
   }
 }

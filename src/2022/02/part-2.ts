@@ -26,8 +26,7 @@ const ENDING_SCORES: Record<string, number> = {
     Z: WIN_SCORE,
 } as const;
 
-(async function () {
-    const input = await getInput('02');
+export default function (input: string) {
     const games = input.split('\n');
 
     const resolveShape = (opponent: string, ending: string): string => {
@@ -50,4 +49,4 @@ const ENDING_SCORES: Record<string, number> = {
     }, 0);
 
     console.log('Total: ', total);
-})();
+}
