@@ -1,0 +1,23 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domzic/advent-of-code.git"
+  },
+  "author": "Domas Zicevicius (domas.zicevicius@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/domzic/advent-of-code/issues"
+  },
+  "homepage": "https://github.com/domzic/advent-of-code#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.10",
+    "typescript": "^4.9.3"
+  }
+}
