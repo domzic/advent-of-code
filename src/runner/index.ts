@@ -3,14 +3,13 @@ import getInput from '../2022/data';
 
 program
     .version('1.0.0')
-    .description('CLI to run advent of code solutions')
-    .option('-d, --day <day>', 'Day', '01')
-    .option('-y, --year <year>', 'Year', '2022')
-    .option('-f, --file <file>', 'Name of file', 'index.ts')
+    .description('CLI to run advent of code scripts')
+    .option('-d, --day <day>', 'day', '01')
+    .option('-y, --year <year>', 'year', '2022')
+    .option('-f, --file <file>', 'file name', 'index.ts')
     .parse(process.argv);
 
 const { year, day, file } = program.opts();
-
 const path = `${process.cwd()}/src/${year}/${day}/${file}`;
 
 import(path)
