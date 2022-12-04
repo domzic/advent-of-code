@@ -1,4 +1,4 @@
-import { findCommonChar, calcPriority } from './utils';
+import { findCommonChar, calcPriority } from './util';
 
 export default function (input: string) {
     const rucksacks = input.split('\n');

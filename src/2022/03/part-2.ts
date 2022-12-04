@@ -1,4 +1,4 @@
-import { calcPriority, findCommonChar } from './utils';
+import { calcPriority, findCommonChar } from './util';
 
 export default function (input: string) {
     const GROUP_SIZE = 3;
