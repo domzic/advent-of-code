@@ -1,32 +1,30 @@
-import getInput from '../data';
-
 // A for Rock, B for Paper, and C for Scissors
 // X means you need to lose, Y means you need to end the round in a draw, and Z means you need to win
 // Rock defeats Scissors, Scissors defeats Paper, and Paper defeats Rock.
 
-const DEFEATS: Record<string, string> = {
-    A: 'C',
-    C: 'B',
-    B: 'A',
-} as const;
-
-const SHAPE_SCORES: Record<string, number> = {
-    A: 1,
-    B: 2,
-    C: 3,
-} as const;
-
-const DRAW_SCORE = 3;
-
-const WIN_SCORE = 6;
-
-const ENDING_SCORES: Record<string, number> = {
-    X: 0,
-    Y: DRAW_SCORE,
-    Z: WIN_SCORE,
-} as const;
-
 export default function (input: string) {
+    const DEFEATS: Record<string, string> = {
+        A: 'C',
+        C: 'B',
+        B: 'A',
+    } as const;
+
+    const SHAPE_SCORES: Record<string, number> = {
+        A: 1,
+        B: 2,
+        C: 3,
+    } as const;
+
+    const DRAW_SCORE = 3;
+
+    const WIN_SCORE = 6;
+
+    const ENDING_SCORES: Record<string, number> = {
+        X: 0,
+        Y: DRAW_SCORE,
+        Z: WIN_SCORE,
+    } as const;
+
     const games = input.split('\n');
 
     const resolveShape = (opponent: string, ending: string): string => {
