@@ -17,7 +17,10 @@ import(inputPath).then(async (dynamicInputModule) => {
         .then(async (dynamicModule) => {
             console.info('\x1b[36m%s\x1b[0m', path + ':');
             const input = await dynamicInputModule.default(day);
+            const t0 = performance.now();
             dynamicModule.default(input);
+            const t1 = performance.now();
+            console.log('Execution time: ', (t1 - t0).toFixed(3), 'ms');
         })
         .catch((err) => {
             console.log('\x1b[31m', err);
