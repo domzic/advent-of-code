@@ -1,35 +1,35 @@
 {
-  "name": "advent-of-code",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "exec": "ts-node src/runner"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/domzic/advent-of-code.git"
-  },
-  "author": "Domas Zicevicius (domas.zicevicius@gmail.com)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/domzic/advent-of-code/issues"
-  },
-  "homepage": "https://github.com/domzic/advent-of-code#readme",
-  "devDependencies": {
-    "@types/node": "^18.11.10",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "eslint": "^8.0.1",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-config-standard-with-typescript": "^23.0.0",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-n": "^15.0.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "prettier": "^2.8.0",
-    "typescript": "*"
-  },
-  "dependencies": {
-    "commander": "^9.4.1"
-  }
+    "name": "advent-of-code",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "exec": "ts-node src/runner"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/domzic/advent-of-code.git"
+    },
+    "author": "Domas Zicevicius (domas.zicevicius@gmail.com)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/domzic/advent-of-code/issues"
+    },
+    "homepage": "https://github.com/domzic/advent-of-code#readme",
+    "devDependencies": {
+        "@types/node": "^18.11.10",
+        "@typescript-eslint/eslint-plugin": "^5.0.0",
+        "eslint": "^8.0.1",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-config-standard-with-typescript": "^23.0.0",
+        "eslint-plugin-import": "^2.25.2",
+        "eslint-plugin-n": "^15.0.0",
+        "eslint-plugin-promise": "^6.0.0",
+        "prettier": "^2.8.0",
+        "typescript": "*"
+    },
+    "dependencies": {
+        "commander": "^9.4.1"
+    }
 }
