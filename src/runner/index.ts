@@ -3,8 +3,12 @@ import { program } from 'commander';
 program
     .version('1.0.0')
     .description('CLI to run advent of code scripts')
-    .option('-d, --day <day>', 'day', '01')
-    .option('-y, --year <year>', 'year', '2023')
+    .option(
+        '-d, --day <day>',
+        'day',
+        new Date().getDay().toString().padStart(2, '0')
+    )
+    .option('-y, --year <year>', 'year', new Date().getFullYear().toString())
     .option('-f, --file <file>', 'file name', 'index.ts')
     .parse(process.argv);
 
